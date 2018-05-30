@@ -1,7 +1,8 @@
 const Discord = require('discord.js');
 const eco = require('discord-eco');
 const fs = require('fs');
-const settings = require('./jsons/settings.json');
+const settings = require('./settings.json');
+const colors = require('./jsons/colors.json');
 const bot = new Discord.Client();
 var prefix = "eco.";
 let userData = JSON.parse(fs.readFileSync('./jsons/userData.json', 'utf8'));
